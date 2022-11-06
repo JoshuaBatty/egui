@@ -238,7 +238,7 @@ impl Renderer {
                 entry_point: if output_format.describe().srgb {
                     "vs_main"
                 } else {
-                    "vs_conv_main"
+                    "vs_main" // "vs_conv_main"
                 },
                 module: &module,
                 buffers: &[wgpu::VertexBufferLayout {
